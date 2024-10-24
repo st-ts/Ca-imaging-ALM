@@ -83,3 +83,11 @@ Key Findings:
 * Neuronal recordings show distinct patterns of activity in the ALM, with a subset of neurons showing increased firing rates after different trial types.
 * Optogenetic stimulation of the D2 pathway reduces errors, mimicking the oomph effect, and provides insights into the neural mechanisms underlying motor planning influenced by previous actions.
 * The oomph effect diminishes when trial choices are free (without external cues), indicating the role of reward-based learning in serial dependence.
+
+## License
+
+This project is licensed under the **MIT License**. You are free to use, modify, and distribute the code in this repository, as long as the original copyright notice and permission notice appear in all copies of the software.
+
+
+
+
