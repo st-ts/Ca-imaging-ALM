@@ -20,7 +20,7 @@ This project investigates the phenomenon of serial dependence in motor planning 
 
 ## Data
 
-The dataset used in this project consists of calcium imaging data from the **anterolateral motor cortex (ALM)** of mice engaged in a two-choice decision-making task based on auditory cues. The data includes:
+The dataset used in this project consists of calcium imaging data from the anterolateral motor cortex (ALM) of mice engaged in a two-choice decision-making task based on auditory cues. The data includes:
 
 ### 1. Raw Data:
 - **Calcium Imaging Recordings**: Collected from the ALM using GCaMP6 calcium indicators.
@@ -41,14 +41,14 @@ The dataset used in this project consists of calcium imaging data from the **ant
 - **Optogenetic Modulation**: Data showing the effects of D2 pathway stimulation on behavioral accuracy and neuronal activity.
 
 ### Data Access
-Due to the size and privacy concerns of the dataset, raw data files are not included in this repository. Please contact me if you require access to the data.
+Due to the size of the dataset, raw data files are not included in this repository. Please contact me if you require access to the data.
 
 ## Methods
 
 This section describes the methods used for calcium imaging, optogenetic stimulation, and data analysis in this project.
 
 ### Calcium Imaging
-Neuronal activity was recorded using a one-photon **3i VIVO SDC microscope** at a resolution of 512x512 pixels and a frame rate of 10 Hz. The calcium imaging was performed using **GCaMP6** calcium indicators to record activity in the ALM of mice during a two-choice decision-making task.
+Neuronal activity was recorded using a one-photon 3i VIVO microscope at a resolution of 512x512 pixels and a frame rate of 10 Hz. The calcium imaging was performed using **GCaMP6** calcium indicators to record activity in the ALM of mice during a two-choice decision-making task.
 
 - **Preprocessing**: We used the **CaImAn package** (Giovannucci et al., 2019) for initial signal processing. This included:
   - Motion correction to correct for drift and other movements during imaging.
@@ -71,7 +71,7 @@ Mice performed a two-choice discrimination task where they made left or right li
 ### Population Activity Analysis
 We performed population-level analyses to investigate the effects of serial dependence on motor planning:
 - For each trial, we analyzed the trajectories of neuronal activity in a reduced-dimensional space obtained via PCA/ICA.
-- We compared the **peak activity** for `prev_same` and `prev_diff` trials and used non-parametric tests (Mann-Whitney U) to assess the significance of observed differences in neuronal dynamics.
+- We compared the peak activity for the components for `prev_same` and `prev_diff` trials and used non-parametric tests (Mann-Whitney U) to assess the significance of observed differences in neuronal dynamics.
 
 ### Visualization
 Neuronal activity and results were visualized using custom scripts that generate trial-averaged activity traces, showing neuronal responses aligned to key task events (e.g., tone onset, choice response). The results include heatmaps, PCA component plots, and raster plots to demonstrate the task-related activity of neurons during the behavioral tasks.
